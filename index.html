@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio | Final Project</title>
+  <meta name="description" content="A responsive and accessible portfolio website built with HTML and CSS, enhanced using AI tools." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e293b;
+      --bg: #f8fafc;
+      --text: #0f172a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--secondary);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #2563eb, #1d4ed8);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--secondary);
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Web Portfolio</h1>
+    <nav aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#ai">AI Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Final Website Project</h2>
+      <p>A fully responsive and accessible website built using HTML, CSS, and AI-assisted development tools.</p>
+    </section>
+
+    <section id="about">
+      <h3>About This Project</h3>
+      <p>
+        This website was created as a final assignment to demonstrate my skills in planning, designing, and building a professional website.
+        It follows modern web standards, uses semantic HTML, responsive CSS, and accessibility best practices.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h3>Key Features</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Responsive Design</h4>
+          <p>Works smoothly on desktop, tablet, and mobile devices using flexible layouts and media queries.</p>
+        </div>
+        <div class="card">
+          <h4>Accessible Markup</h4>
+          <p>Uses semantic HTML, readable contrast, and navigation landmarks for better accessibility.</p>
+        </div>
+        <div class="card">
+          <h4>Clean Structure</h4>
+          <p>Well-organized HTML and CSS that is easy to maintain and understand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <h3>Use of AI Tools</h3>
+      <p>
+        AI tools were used to assist in brainstorming layout ideas, refining content, checking code quality,
+        and improving accessibility and responsiveness. This reflects real-world development workflows where
+        developers collaborate with AI to work more efficiently.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h3>Project Links</h3>
+      <p>
+        🔗 <strong>Live Website:</strong> <em>Add your deployed link here (GitHub Pages / Netlify)</em><br />
+        🔗 <strong>GitHub Repository:</strong> <em>Add your GitHub repo link here</em>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 My Portfolio · Built with HTML, CSS, and AI tools
+    </p>
+  </footer>
+
+</body>
+</html>
